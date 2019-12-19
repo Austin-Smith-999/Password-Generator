@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css">
     <title>Password Generator</title>
   </head>
   <body>
@@ -11,15 +12,57 @@
       <h1>Password Generator</h1>
     </header>
     <h2>Generate a Password</h2>
+
+
     <textarea
-      readonly
-      id="password"
-      placeholder="Your Secure Password"
-      aria-label="Generated Password"
-    ></textarea>
+    id="passwordLengthInput"
+    placeholder="Password Length Between 8-128 characters"
+    aria-label="Generated Password"
+  ></textarea>
+
+  <!-- Input buttons for character selection for password generation -->
+
+  <!-- Number Button   -->
+  <div class="checkCharacterFormat">
+    <input class="checkCharacterFormat" type="checkbox" value="" id="numCheckbox">
+    Number
+  </div>
+
+  <!-- Lower Case Button -->
+  <div class="checkCharacterFormat">
+    <input class="checkCharacterFormat" type="checkbox" value="" id="lowercaseCheckbox">
+    Lowercase
+  </div>
+
+  <!-- Upper Case Button -->
+  <div class="checkCharacterFormat">
+    <input class="checkCharacterFormat" type="checkbox" value="" id="uppercaseCheckbox">
+    Uppercase
+  </div>
+
+  <!-- Special Character Button -->
+  <div class="checkCharacterFormat">
+    <input class="checkCharacterFormat" type="checkbox" value="" id="specialCharacterCheckbox">
+    Special Character
+  </div>
+
+
+
+
+
+
     <button id="generate">Generate Password</button>
     <button id="copy">
       Copy to Clipboard
     </button>
+
+    <textarea
+    readonly
+    id="password"
+    placeholder="Your Secure Password"
+    aria-label="Generated Password"
+  ></textarea>
+
+    <script src="app.js"></script>
   </body>
 </html>
