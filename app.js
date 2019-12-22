@@ -21,6 +21,7 @@ const selectNumberBox = document.querySelector("#numCheckbox");
 const selectLowercaseBox = document.querySelector("#lowercaseCheckbox");
 const selectUppercaseBox = document.querySelector("#uppercaseCheckbox");
 const selectSpecialCharBox = document.querySelector("#specialCharacterCheckbox");
+
 // Randomizing characters variable
 let randomChar = {
     numberRandom: randomizeNumber,
@@ -28,7 +29,6 @@ let randomChar = {
     uppercaseRandom: randomizeUpper,
     specialCharRandom: randomizeSpecial
 }; 
-
 
 selectGenerateButton.addEventListener("click", function() {
     let passwordLength = selectPasswordLengthSelector.value;
@@ -94,27 +94,23 @@ function passwordGenerator(number, lowerCase, upperCase, specialCharacter, passw
     return passwordGenerated;
 
     // Copy to Clipboard
-    selectCopyButton.addEventListener("click", function() {
+    function copyToClipboardFunc() {
+        var copyText = document.querySelector("#passwordLengthInput");
+        copyText.select();
+        document.execCommand("copy");
+    }
+
+    // Click event for copying
+    document.querySelector("#copy").addEventListener("click", copyToClipboardFunc); 
+    // {
+        
+        
         // let copyPassword = document.querySelector("#password");
         // copyPassword.value.select();
-        selectPasswordBox.value = valueOfPassword;
-        valueOfPassword.execCommand("copy"); 
-    })
+        // selectPasswordBox.value = valueOfPassword;
+        // valueOfPassword.execCommand("copy"); 
+//     })
+// }
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

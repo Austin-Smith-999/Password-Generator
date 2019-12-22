@@ -3,8 +3,22 @@
 }
 
 h1 {
+    font-size: 5em;
+    color: rgb(0, 167, 167);
+    margin-top: .8em;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.permanentMarkerFont {
     font-family: 'Permanent Marker', cursive;
-    font-size: 3em;
+}
+
+body {
+    background-color: rgb(255, 163, 180);
 }
 
 
