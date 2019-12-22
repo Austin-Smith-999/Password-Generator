@@ -2,19 +2,20 @@
     text-align: center;
 }
 
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3em;
+}
+
+
+
 #password {
     display: block;
     margin: auto;
 }
 
-h1 {
+.montserrat {
     font-family: 'Montserrat', sans-serif;
 }
 
-.checkCharacterFormat {
-    font-family: 'Montserrat', sans-serif;
-}
 
-.sansSerif {
-    font-family: Arial, Helvetica, sans-serif;
-}
