@@ -1,5 +1,5 @@
 # Password-Generator
-Application that generates a random password based on user-selected criteria.
+Application that generates a random password based on user-selected criteria.  Using just JavaScript and HTML/CSS.
 
 ![screenshot](./pictures/PasswordGeneratorPic.png)
 
